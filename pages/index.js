@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import ViewSource from '../components/view-source'
 import galaxy from '../public/galaxy.jpg'
+import dog from '../public/dog.jpg'
 
 const Code = (p) => <code className={styles.inlineCode} {...p} />
 
@@ -99,6 +100,7 @@ const Index = () => (
         image.
       </p>
       <Image alt="Vercel logo" src={galaxy} placeholder="blur" layout="responsive" />
+      <Image alt="A Dog" src={dog} placeholder="blur" layout="responsive" />
       <hr className={styles.hr} />
       <h2 id="external">External Image</h2>
       <p>
